@@ -39,4 +39,3 @@ def getFeed(ID):
     finalGroups.sort(key = lambda item: (-1 * AssignValue(item, userInterests, userSubjects), item['groupTimeCreated']))
     return finalGroups
 
-print(getFeed('000002'))
