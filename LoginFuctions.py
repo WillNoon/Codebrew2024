@@ -30,7 +30,8 @@ def createAccount(userId,userName,userPassword):
             json.dump(data, f, indent=2)
             return (True, '')
         except Exception as e:
-            return (False, 'Error creating account')
+            return (False, 'error')
         
 
-        
+
+     
