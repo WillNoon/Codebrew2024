@@ -1,0 +1,65 @@
+[
+    {
+      "groupId": "000001",
+      "groupSubjects": [
+        "computing",
+        "maths"
+      ],
+      "groupIntrests": [
+          "debating"
+      ],
+      "groupMembers": [
+        "000000",
+        "000001"
+      ],
+      "groupMax": 6,
+      "groupDesc": "this is a test club it is a club",
+      "groupTimeCreated": "2024-04-04 16:39:33"
+    },
+    
+    {
+      "groupId": "000002",
+      "groupSubjects": [
+        ],
+        "groupIntrests": [
+            "socialising"
+        ],
+      "groupMembers": [
+        "000000",
+        "000001",
+        "000002"
+      ],
+      "groupMax": 4,
+      "groupDesc": "this is a test club it is a club",
+      "groupTimeCreated": "2024-04-04 16:39:34"
+    },
+    {
+      "groupId": "000003",
+      "groupSubjects": [
+          "maths"
+        ],
+        "groupIntrests": [
+            "study"
+        ],
+      "groupMembers": [],
+      "groupMax": 3,
+      "groupDesc": "this is a test club it is a club",
+      "groupTimeCreated": "2024-04-04 16:39:35"
+    },
+    {
+      "groupId": "000004",
+      "groupSubjects": [
+          "science"
+        ],
+        "groupIntrests": [
+            "socialising"
+        ],
+      "groupMembers": [
+        "000004",
+        "000005"
+      ],
+      "groupMax": 2,
+      "groupDesc": "this is a test club it is a club",
+      "groupTimeCreated": "2024-04-04 16:39:36"
+    }
+  ]
