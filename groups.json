@@ -1,0 +1,32 @@
+[
+    {
+      "groupId": "00001",
+      "groupTags":["computing","maths"],
+      "groupMembers":["00000","00001"],
+      "groupMax":6,
+      "groupDesc":"this is a test club it is a club"
+    },
+    {
+        "groupId": "00002",
+        "groupTags":["science","friends"],
+        "groupMembers":["00000","00001","00002"],
+        "groupMax":4,
+        "groupDesc":"this is a test club it is a club"
+      },
+      {
+        "groupId": "00003",
+        "groupTags":["computing","debating"],
+        "groupMembers":[],
+        "groupMax":3,
+        "groupDesc":"this is a test club it is a club"
+      },
+      {
+        "groupId": "00004",
+        "groupTags":["computing","maths","science"],
+        "groupMembers":["00004","00005"],
+        "groupMax":2,
+        "groupDesc":"this is a test club it is a club"
+      }
+  ]
+
+
