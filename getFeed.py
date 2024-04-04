@@ -36,5 +36,5 @@ def getFeed(ID):
             if member == ID:
                 finalGroups.remove(group)
     #sort
-    finalGroups.sort(key = lambda item: (-1 * AssignValue(item, userInterests, userSubjects), item['groupTimeCreated']))
+    finalGroups.sort(key = lambda item: (-1 * AssignValue(item, userInterests, userSubjects), datetime.strptime(item['groupTimeCreated'], "%Y-%m-%d %H:%M:%S")))
     return finalGroups
