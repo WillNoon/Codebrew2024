@@ -115,6 +115,22 @@ def createEvent(groupId,eventTime,eventLocation):
     with open('events/' + groupId +'.json', 'w') as f:
         json.dump(data, f, indent=2)
 
+def retrieveUpcomingEvents(ID):
+    events = []
+    groups = []
+    groups = retreiveGroups(ID)
+    for group in groups:
+        try:
+            with open("events/" + group['groupId'] + ".json", 'r') as f:
+                data = json.load(f)
+        except Exception as e:
+            continue
+        for event in data:
+            if datetime.strptime(event["eventTime"], "%Y-%m-%d %H:%M:%S") > datetime.now():
+                events.append(event)
+    return sorted(events, key = lambda item: datetime.strptime(item["eventTime"]))
+
+
 
 #### Profile Functions
 def retrieveUserInfo(ID):
