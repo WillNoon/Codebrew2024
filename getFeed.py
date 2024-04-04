@@ -29,7 +29,14 @@ def getFeed(ID):
     #get all groups
     with open("groups.json", "r") as d:
         groups = json.load(d)
+    #remove groups already a member of
+    finalGroups = groups.copy()
+    for group in groups:
+        for member in group["groupMembers"]:
+            if member == ID:
+                finalGroups.remove(group)
     #sort
-    groups.sort(key = lambda item: (-1 * AssignValue(item, userInterests, userSubjects), item['groupTimeCreated']))
-    return groups
+    finalGroups.sort(key = lambda item: (-1 * AssignValue(item, userInterests, userSubjects), item['groupTimeCreated']))
+    return finalGroups
 
+print(getFeed('000002'))
