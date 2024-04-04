@@ -1,0 +1,37 @@
+[
+  {
+      "userId": "000001",
+      "name": "John",
+      "password": "password123",
+      "userIntrests": [
+      "socialising"
+      ],
+      "userSubjects": [
+      "computing",
+      "maths"
+      ]
+  },
+  {
+      "userId": "000002",
+      "name": "Max",
+      "password": "password",
+      "userIntrests": [
+      "debating"
+      ],
+      "userSubjects": [
+      "science",
+      "maths"
+      ]
+  },
+  {
+      "userId": "000003",
+      "name": "Will",
+      "password": "passwordd",
+      "userIntrests": [
+      "socialising"
+      ],
+      "userSubjects": [
+      "science"
+      ]
+  }
+]
