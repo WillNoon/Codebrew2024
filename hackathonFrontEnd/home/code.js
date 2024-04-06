@@ -13,10 +13,42 @@ async function sendHTTPS(extension, body={"userId":"000001"}, method="POST") {
     return j;
 }
 
+let userId = ""
+
+
+function nav(loc) {
+    console.log(loc);
+    let s = "";
+    if (loc == 0) {
+        s = "../creategroup/creategroup.html";
+    }
+    if (loc == 1) {
+        s = "../addgroups/addgroups.html";
+    }
+    if (loc == 2) {
+        s = "../home/home.html";
+    }
+    if (loc == 3) {
+        s = "../mygroups/mygroups.html";
+    }
+    if (loc == 4) {
+        s = "../profile/profile.html";
+    }
+    window.location.href = s + '?userId=' + userId;
+}
 
 async function gettable() {
     console.log("Getting upcoming events")
-    let eventlist = await sendHTTPS("retrieveUpcomingEvents", body={"userId":"000001"});
+    var params = new URLSearchParams(window.location.search);
+            // Retrieve data parameter
+    
+    userId = params.get('userId');
+            // Display data on the page
+    if (!userId) {
+        userId = "000001";
+    }
+    console.log(userId);
+    let eventlist = await sendHTTPS("retrieveUpcomingEvents", body={"userId":userId});
     // !!!!! WIll need to get userID from JSON Cookie
     console.log(eventlist);
 

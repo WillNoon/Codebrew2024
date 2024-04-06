@@ -191,13 +191,16 @@
           <input type="text" id="txtname" class="gwd-input-11z2">
           <input type="text" id="txtlocation" class="gwd-input-1l8n">
           <input type="datetime-local" id="meeting" name="meeting" class="pee">
-          <gwd-image id="gwd-image_1" source="assets/Screenshot 2024-04-06 at 2.41.53 pm.png" scaling="stretch" class="gwd-image-1kmo"></gwd-image>
+          <gwd-image id="gwd-image_1" source="assets/Screenshot 2024-04-06 at 2.41.53 pm.png" scaling="stretch" class="gwd-image-1kmo" onclick="nav(0)"></gwd-image>
         </div>
       </gwd-page>
     </gwd-pagedeck>
   </gwd-google-ad>
   <script type="text/javascript" id="gwd-init-code">
     const path = "https://64797083-dd51-442c-a36f-84a92c6265df-00-30ipml1u64wqw.worf.replit.dev/"
+
+    groupId = ""
+    userId = ""
 
     async function sendHTTPS(extension, body = {
       "key": "val"
@@ -218,8 +221,30 @@
       createEvent()
     }
 
+    function nav(loc) {
+      console.log(loc);
+      var params = new URLSearchParams(window.location.search);
+            // Retrieve data parameter
+    
+      userId = params.get('userId');
+            // Display data on the page
+        if (!userId) {
+         userId = "000001";
+      }
+
+      window.location.href = '../group/group.html' + '?userId=' + userId + '&groupId=' + groupId;
+}
 
     async function createEvent() {
+      var params = new URLSearchParams(window.location.search);
+            // Retrieve data parameter
+    
+      userId = params.get('userId');
+      groupId = params.get('groupId');
+            // Display data on the page
+        if (!userId) {
+         userId = "000001";
+      }
       console.log("sex")
       const dateTimeValue = document.getElementById("meeting").value;
       const selectedDateTime = new Date(dateTimeValue);
@@ -232,7 +257,7 @@
       const formattedDateTime = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
 
       let x = sendHTTPS("createEvent", {
-        'groupId': '000001',
+        'groupId': groupId,
         'eventName': document.getElementById("txtname").value,
         'eventTime': formattedDateTime,
         'eventLocation': document.getElementById("txtlocation").value

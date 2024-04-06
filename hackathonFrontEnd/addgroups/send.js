@@ -12,6 +12,31 @@ async function sendHTTPS(extension, body={"key":"val"}, method="POST") {
     let j = await data.json();
     return j;
 }
+
+let userId = ""
+
+
+function nav(loc) {
+    console.log(loc);
+    let s = "";
+    if (loc == 0) {
+        s = "../creategroup/creategroup.html";
+    }
+    if (loc == 1) {
+        s = "../addgroups/addgroups.html";
+    }
+    if (loc == 2) {
+        s = "../home/home.html";
+    }
+    if (loc == 3) {
+        s = "../mygroups/mygroups.html";
+    }
+    if (loc == 4) {
+        s = "../profile/profile.html";
+    }
+    window.location.href = s + '?userId=' + userId;
+}
+
 async function retrievegroups(){
         const searchbar = document.getElementById('searchBar');
         const chxHideFull = document.getElementById("chxHideFull");
@@ -21,7 +46,17 @@ async function retrievegroups(){
         else{searchText = searchbar.value}
         if (chxHideFull == null){hideFullBool = false}
         else{hideFullBool = chxHideFull.checked}
-        const groups = await sendHTTPS('getFeed', body = {"userID": "000001", "searchInput": searchText, "hideFull": hideFullBool});
+        var params = new URLSearchParams(window.location.search);
+            // Retrieve data parameter
+    
+         userId = params.get('userId');
+            // Display data on the page
+        if (!userId) {
+            userId = "000001";
+        }
+        console.log(userId);
+
+        const groups = await sendHTTPS('getFeed', body = {"userID": userId, "searchInput": searchText, "hideFull": hideFullBool});
         const container = document.getElementById('container');
         container.innerHTML = '';
         groups.forEach(group => {

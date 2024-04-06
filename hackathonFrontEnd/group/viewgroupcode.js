@@ -11,11 +11,30 @@ async function sendHTTPS(extension, body={"userId":"000001"}, method="POST") {
     return j;
 }
 
+let userId = ""
+let groupId = ""
+
+function nav(loc) {
+    console.log(loc);
+    let s = "";
+    s = "../mygroups/mygroups.html";
+
+    window.location.href = s + '?userId=' + userId;
+}
+
 async function view_did_load() {
 
-
-    console.log("Getting upcoming events")
-    let groupinfo = await sendHTTPS("retreiveGroupInfo", body={"groupId":"006511"});
+    var params = new URLSearchParams(window.location.search);
+            // Retrieve data parameter
+    
+    userId = params.get('userId');
+    groupId = params.get('groupId');
+            // Display data on the page
+    if (!userId) {
+        userId = "000001";
+    }
+    console.log("Getting upcoming events" + groupId.toString())
+    let groupinfo = await sendHTTPS("retreiveGroupInfo", body={"groupId":groupId});
     // !!!!!!!! Will need groupID from cookie
 
 
