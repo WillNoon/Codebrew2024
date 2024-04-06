@@ -241,6 +241,9 @@
           document.getElementById('errorMessage').innerText = "Error: No Account Assosciated With This ID"
         }
       }
+      else {
+        window.location.href = '../home/home.html' + '?userId=' + document.getElementById('text_username').value;
+      }
     }
 
 

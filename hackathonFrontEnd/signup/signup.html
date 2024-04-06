@@ -239,6 +239,9 @@
       if (x['status'] == "fail") {
         document.getElementById('errorMessage').innerText = "Error: Account Already Exists"
       }
+      else {
+        window.location.href = '../home/home.html' + '?userId=' + document.getElementById('text_username').value;
+      }
       console.log(x);
     }
 
