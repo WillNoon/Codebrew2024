@@ -1,0 +1,138 @@
+[
+  {
+    "userId": "000001",
+    "name": "John",
+    "password": "password123",
+    "userInterests": [
+      "study",
+      "socialising",
+      "debating"
+    ],
+    "userSubjects": [
+      "Computing",
+      "Mathematics",
+      "Physics"
+    ]
+  },
+  {
+    "userId": "000002",
+    "name": "Max",
+    "password": "password",
+    "userInterests": [],
+    "userSubjects": []
+  },
+  {
+    "userId": "000003",
+    "name": "Will",
+    "password": "passwordd",
+    "userInterests": [
+      "socialising"
+    ],
+    "userSubjects": [
+      "science"
+    ]
+  },
+  {
+    "userId": "000000",
+    "name": "sodifunsdf",
+    "password": "usiodfnusodif",
+    "userInterests": [
+      "socialising"
+    ],
+    "userSubjects": [
+      "science"
+    ]
+  },
+  {
+    "userId": "000004",
+    "name": "baby",
+    "password": "baby",
+    "userInterests": [
+      "socialising"
+    ],
+    "userSubjects": [
+      "science"
+    ]
+  },
+  {
+    "userId": "234092834",
+    "name": "sdfiupnsdpif",
+    "password": "sdipufnipsdfu",
+    "userInterests": [
+      "socialising"
+    ],
+    "userSubjects": [
+      "science"
+    ]
+  },
+  {
+    "userId": "000005",
+    "name": "pass",
+    "password": "maximus debski",
+    "userInterests": [
+      "socialising"
+    ],
+    "userSubjects": [
+      "science"
+    ]
+  },
+  {
+    "userId": "1617324",
+    "name": "password",
+    "password": "4928559"
+  },
+  {
+    "userId": "8327463",
+    "name": "William",
+    "password": "password123"
+  },
+  {
+    "userId": "111111",
+    "name": "kid",
+    "password": "pass"
+  },
+  {
+    "userId": "123456",
+    "name": "kid",
+    "password": "pass",
+    "userInterests": [
+      ""
+    ],
+    "userSubjects": [
+      ""
+    ]
+  },
+  {
+    "userId": "2173621",
+    "name": "MAxiumus",
+    "password": "securePassword1",
+    "userInterests": [
+      ""
+    ],
+    "userSubjects": [
+      ""
+    ]
+  },
+  {
+    "userId": "73963812",
+    "name": "William",
+    "password": "securePassword123",
+    "userInterests": [
+      ""
+    ],
+    "userSubjects": [
+      ""
+    ]
+  },
+  {
+    "userId": "5412345",
+    "name": "William",
+    "password": "securePassword123",
+    "userInterests": [
+      ""
+    ],
+    "userSubjects": [
+      ""
+    ]
+  }
+]

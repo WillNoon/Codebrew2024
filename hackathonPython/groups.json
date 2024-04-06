@@ -1,0 +1,195 @@
+[
+  {
+    "groupId": "000001",
+    "groupName": "group1",
+    "groupSubjects": [
+      "computing",
+      "maths"
+    ],
+    "groupInterests": [
+      "debating"
+    ],
+    "groupMembers": [
+      "000002",
+      "000001",
+      "000003"
+    ],
+    "groupMax": 8,
+    "groupDesc": "this is a test club it is a club",
+    "groupTimeCreated": "2024-04-04 16:39:33"
+  },
+  {
+    "groupId": "000002",
+    "groupName": "group2",
+    "groupSubjects": [],
+    "groupInterests": [
+      "socialising"
+    ],
+    "groupMembers": [
+      "000000",
+      "000001",
+      "000002"
+    ],
+    "groupMax": 4,
+    "groupDesc": "this is a test club it is a club",
+    "groupTimeCreated": "2024-04-04 16:39:34"
+  },
+  {
+    "groupId": "000003",
+    "groupName": "Maths and computing club",
+    "groupSubjects": [
+      "maths",
+      "computing"
+    ],
+    "groupInterests": [
+      "study"
+    ],
+    "groupMembers": [],
+    "groupMax": 3,
+    "groupDesc": "Join us as we work on our computing and maths majors",
+    "groupTimeCreated": "2024-04-04 16:39:35"
+  },
+  {
+    "groupId": "000004",
+    "groupName": "Science Arts First Year Social Group",
+    "groupSubjects": [
+      "science",
+      "arts"
+    ],
+    "groupInterests": [
+      "socialising"
+    ],
+    "groupMembers": [
+      "000004",
+      "000005"
+    ],
+    "groupMax": 2,
+    "groupDesc": "First year can be hard, join us for fun social activities!",
+    "groupTimeCreated": "2024-04-04 16:39:36"
+  },
+  {
+    "groupId": "75319",
+    "groupName": "the lucky group",
+    "groupSubjects": [
+      "chemistry"
+    ],
+    "groupInterests": [
+      "luckw",
+      "prosperity"
+    ],
+    "groupAdmin": "000001",
+    "groupMembers": [
+      "000001"
+    ],
+    "groupMax": "6",
+    "groupDesc": "lucky people",
+    "groupTimeCreated": "2024-04-06 00:51:18"
+  },
+  {
+    "groupId": "000009",
+    "groupName": "Debating Club",
+    "groupSubjects": [
+      "english"
+    ],
+    "groupInterests": [
+      "debating"
+    ],
+    "groupMembers": [
+      "000004",
+      "000005",
+      "000004",
+      "000005",
+      "000004",
+      "000005"
+    ],
+    "groupMax": 12,
+    "groupDesc": "Weekly Debates, all skill levels welcome!",
+    "groupTimeCreated": "2024-04-04 16:39:36"
+  },
+  {
+    "groupId": "006511",
+    "groupName": "Weekly Practice Exams",
+    "groupSubjects": [
+      "science",
+      "maths",
+      "engineering"
+    ],
+    "groupInterests": [
+      "exams"
+    ],
+    "groupMembers": [
+      "000004"
+    ],
+    "groupMax": 5,
+    "groupDesc": "Get Ready for exam time with weekly practice exams!",
+    "groupTimeCreated": "2024-04-04 16:39:36"
+  },
+  {
+    "groupId": "346511",
+    "groupName": "Weekly sit and chat",
+    "groupSubjects": [],
+    "groupInterests": [
+      "socialising"
+    ],
+    "groupMembers": [
+      "000004",
+      "000005",
+      "000009"
+    ],
+    "groupMax": 8,
+    "groupDesc": "Get Ready for exam time with weekly practice exams!",
+    "groupTimeCreated": "2024-04-04 16:39:36"
+  },
+  {
+    "groupId": "44390",
+    "groupName": "Small Science Study Club",
+    "groupSubjects": [
+      "Physics",
+      "Chemistry",
+      "Biology"
+    ],
+    "groupInterests": [
+      "study",
+      "socialising"
+    ],
+    "groupAdmin": "000001",
+    "groupMembers": [
+      "000001"
+    ],
+    "groupMax": "5",
+    "groupDesc": "small group to study science",
+    "groupTimeCreated": "2024-04-06 03:22:54"
+  },
+  {
+    "groupId": "98264",
+    "groupName": "",
+    "groupSubjects": [],
+    "groupInterests": [],
+    "groupAdmin": "000001",
+    "groupMembers": [
+      "000001"
+    ],
+    "groupMax": "",
+    "groupDesc": "",
+    "groupTimeCreated": "2024-04-06 04:57:24"
+  },
+  {
+    "groupId": "46397",
+    "groupName": "Computing Debating Club",
+    "groupSubjects": [
+      "Computing"
+    ],
+    "groupInterests": [
+      "debating",
+      "software",
+      "social"
+    ],
+    "groupAdmin": "000001",
+    "groupMembers": [
+      "000001"
+    ],
+    "groupMax": "6",
+    "groupDesc": "We Debate the many aspects of Computer Science",
+    "groupTimeCreated": "2024-04-06 05:01:41"
+  }
+]
